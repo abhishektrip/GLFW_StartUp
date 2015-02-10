@@ -44,7 +44,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\TrainingCode\Self_Learning\VolumeRendering\Volume Rendering\Volume Rendering\OpenGLStuff\glew-1.12.0\include;C:\TrainingCode\Self_Learning\VolumeRendering\Volume Rendering\Volume Rendering\OpenGLStuff\glfw-3.1.bin.WIN32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\TrainingCode\Self_Learning\VolumeRendering\Volume Rendering\Volume Rendering\OpenGLStuff\glm-0.9.6.1\glm;C:\TrainingCode\Self_Learning\VolumeRendering\Volume Rendering\Volume Rendering\OpenGLStuff\glew-1.12.0\include;C:\TrainingCode\Self_Learning\VolumeRendering\Volume Rendering\Volume Rendering\OpenGLStuff\glfw-3.1.bin.WIN32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -70,13 +70,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ATScene.h" />
     <ClInclude Include="ATWindow.h" />
+    <ClInclude Include="FileLoader.h" />
+    <ClInclude Include="GraphicsCamera.h" />
+    <ClInclude Include="Renderer.h" />
     <ClInclude Include="UtilityFunctions.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ATScene.cpp" />
     <ClCompile Include="ATWindow.cpp" />
+    <ClCompile Include="FileLoader.cpp" />
+    <ClCompile Include="GraphicsCamera.cpp" />
+    <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="UtilityFunctions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Triangle.fs" />
+    <None Include="Triangle.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

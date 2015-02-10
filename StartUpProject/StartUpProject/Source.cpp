@@ -1,31 +1,10 @@
-#include "ATWindow.h"
-class wrapperClass
-{
-public:
-	wrapperClass(){};
-	void setup()
-	{
-		window = new ATWindow(640, 480, "My Window");
-	}
-	void draw()
-	{
-		glfwMakeContextCurrent((GLFWwindow*)window->getWindowHandle());
-		glfwSwapInterval(1);
-		while (!glfwWindowShouldClose((GLFWwindow*)window->getWindowHandle()))
-		{
-			//Add Drawing functions here
-			glfwSwapBuffers((GLFWwindow*)window->getWindowHandle());
-			glfwPollEvents();
-		}
-	}
-private:
-	ATWindow* window;
-};
+#include "Renderer.h"
+
 int main()
 {
-	wrapperClass* test;
-	test = new wrapperClass();
-	test->setup();
+	Renderer* test;
+	test = new Renderer();
+	test->setup( "My Window",640, 480);
 	test->draw();
 	delete test; 
 	/*ATWindow* newWindow;

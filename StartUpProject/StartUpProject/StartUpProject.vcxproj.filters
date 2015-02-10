@@ -21,6 +21,18 @@
     <ClInclude Include="UtilityFunctions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="FileLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ATScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ATWindow.cpp">
@@ -29,8 +41,28 @@
     <ClCompile Include="UtilityFunctions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source.cpp">
-      <Filter>Header Files</Filter>
+    <ClCompile Include="FileLoader.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GraphicsCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ATScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Triangle.fs">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="Triangle.vs">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
